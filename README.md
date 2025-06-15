@@ -22,6 +22,22 @@ Generation.SourceGenerator 를 먼저 빌드하고 빌드결과물 경로를 Sam
   </ItemGroup>
 </Project>
 ```
-Sample 프로젝트의 Foo 클래스 사용시 소스가 생성됩니다. 
 
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sample
+{
+    [TestPartial]
+    public partial class Foo
+    {
+    }
+}
+```
+Foo 클래스에는 [TestPartial] 애트리뷰트가 선언되어있기 때문에 
+GeneratedMethod(); 를 자동생성코드에서 포함됩니다. 
 
