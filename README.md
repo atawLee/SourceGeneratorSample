@@ -1,7 +1,7 @@
 # Generation.SourceGenerator
 
 이 프로젝트는 C# Source Generator 예제입니다.
-특정 Attribute([MyPartial])가 붙은 클래스에 대해 partial 코드를 자동 생성합니다.
+특정 Attribute([TestPartial])가 붙은 클래스에 대해 partial 코드를 자동 생성합니다.
 
 ## 주요 파일
 - `MyPartialAttribute.cs`: 예시 Attribute 정의
